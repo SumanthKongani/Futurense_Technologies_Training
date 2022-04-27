@@ -1,7 +1,0 @@
-1. Data {var = 'Dhoni', Files like CSV, Excel, XML}
-
-2. DB -> to accumulate Data {Data is dynamic, keeps changing}
-
-3. Data Warhousing  -> analytics {Data is static, Doesn't change}
-
-4. Visualization 
