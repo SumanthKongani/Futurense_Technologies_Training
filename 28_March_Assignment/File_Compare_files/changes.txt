@@ -1,0 +1,12 @@
+Line 1: changed 
+	File 1: The built-in os module has a number 
+ 
+	File 2: The built-in os module has a number1 
+Line 2: changed 
+	File 1: of useful functions that can be used 
+ 
+	File 2: of useful functions2 that can be used 
+Line 3 is Same
+Line 4: changed 
+	File 1: results. 
+	File 2: not3 results.
