@@ -1,0 +1,87 @@
+1. Client/Server
+
+1.1 Security , Connection Handling Authentication,
+
+1.1.1 LDAP Lightweight Directory Access Protocol 
+
+1.2 Thread Handling or Connection Handling
+
+1.3 Query Cache - Feature or mechanisam which will helps us speed up the query processing (Data retrieval) (RAM)
+
+>>> show variables like "have_query_cache"
+
+#proxySQL
+
+1.2 and 1.3 layers of mySQL is main mechanism ---> Parsing, Analysis, Optimization, 
+	Caching 16 Inbuilt layers (dates, times, encryption).
+
+SP, Triggers, Views
+
+1.4 Storage Engines
+
+# Transaction: ACID
+
+A - Atomicity	-> It means either all the operations (insert, update, delete) inside a transaction take place or none
+C - Consistency	-> It means, whatever happens in the middle of the transaction, this acid property will never leave your database in a half-completed state. 
+I - Isolation	-> Every transaction is individual, and One transaction can’t access the result of other transactions until the transaction completed
+D - Durability	-> Even if there is a system failure, or any abnormal changes also, this property will safeguard the committed data.
+
+make login using tkinter with db, 
+1. Create a button called "DB Operation"
+2. OnClick of the above button, you should declare another two buttons
+"DML" and "DDL"
+
+3. OnClicking each button show the respective commands as buttons
+4. OnCLicking each show the example.
+
+5. make for mysql, oracle, mongo
+
+when clicked on oracle report oracle db is not configured.
+
+
+WebServices
+
+# API Application Program Interface 
+# www.facebook.com/Register
+
+yes.
+
+#django, Flask, tornado, bottle
+
+#flask ---- Framework --- Python 
+#flask is called as microservices (light weighted)
+
+#postman (either by application or extension in google)
+
+#Accessing the services
+
+1. Project or application or services or operation 
+2. if needed, connect to the DB whenever and wherever it is possible
+
+#WebHosting
+ Making your application run on any server IP is called WEBHOSting. 
+ To Host a Web or Application we need to have certain server (which has the capacity of hosting)
+
+
+IIS 
+1. Open the application of the server which is gonna help us in hosting
+2. select project and db if needed.
+3. select a port
+4. run the service
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
