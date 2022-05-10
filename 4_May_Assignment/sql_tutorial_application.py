@@ -5,6 +5,13 @@ Created on Wed May  4 10:36:20 2022
 @author: suman
 """
 
+import flask
+from flask import request, jsonify, Flask
+
+app = flask.Flask(__name__)
+
+app.config["DEBUG"] = True
+
 from tkinter import *
 #import xlwt           
 from tkinter.filedialog import askopenfilename
@@ -23,7 +30,7 @@ root.title('Database Tutorial')
 x=StringVar() 
 y=StringVar()
 
-def home():
+def home1():
     x.set("")
     y.set("")
      
@@ -54,7 +61,7 @@ def MySQL():
     b1=Button(f1,text='DB Operations',font=('Rockwell Extra Bold',16),bg="#ff6666",fg='black',activebackground="Violet",activeforeground="red",command=nextpage)
     b1.place(x=150,y=150,height=150,width=250)
     
-    b1=Button(f1,text='<- Back',font=('Eras Bold ITC',16),bg='#e67300',fg='white',activebackground="Blue",activeforeground="red",command=home)
+    b1=Button(f1,text='<- Back',font=('Eras Bold ITC',16),bg='#e67300',fg='white',activebackground="Blue",activeforeground="red",command=home1)
     b1.place(x=400,y=400,height=70,width=100)
     
 def nextpage():
@@ -201,4 +208,11 @@ def Alter():
     b1=Button(f2,text='Back',font=('Eras Bold ITC',16),bg='Gray',fg='white',activebackground="Blue",activeforeground="red",command=DDL)
     b1.place(x=200,y=200,height=70,width=100)
 
-home()
+
+
+@app.route('/', methods=['GET'])
+
+def home():
+    return home1()
+
+app.run(host = '192.168.4.30')
